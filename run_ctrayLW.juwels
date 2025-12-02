@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH -A lgreion
+#SBATCH --job-name="C2Ray_LW"
+#SBATCH --time=24:00:00
+#SBATCH --nodes=1
+##SBATCH --ntasks-per-node=1     # MPI tasks
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=48      # OpenMP threads (adjust to node)
+#SBATCH --mem=0                 # full node memory
+##SBATCH --partition=mem192
+#SBATCH --mail-type=ALL
+##SBATCH --mail-user=da500@sussex.ac.uk
+#SBATCH --output=./log/slurm-%j.out    # STDOUT log
+#SBATCH --error=./log/slurm-%j.err     # STDERR log
+
+echo $SLURM_NTASKS
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+# --- Load modules (JUWELS) ---
+module --force purge
+module load Stages/2026
+module load GCC/14.3.0
+module load OpenMPI/5.0.8
+module load FFTW
+
+# --- Run the code ---
+srun ./C2Ray_3D_cubep3m_periodic_omp_mpi_LW < input

@@ -1,0 +1,58 @@
+
+  [01;33mThis stage is in construction. Thanks for being an early adopter! If
+you are
+  missing some software you'd like to have, please contact support at
+sc@fz-juelich.de[0m
+
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x1516c4e12bef in ???
+#1  0x1516c4f3f01f in ???
+#2  0x1516c49f688a in ucs_memcpy_relaxed
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucs/arch/x86_64/cpu.h:126
+#3  0x1516c49f688a in ucp_memcpy_unpack
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucp/dt/dt.h:82
+#4  0x1516c49f688a in ucp_dt_contig_unpack
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucp/dt/dt_contig.h:56
+#5  0x1516c49f688a in ucp_datatype_iter_unpack
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucp/dt/datatype_iter.inl:447
+#6  0x1516c49f688a in ucp_request_recv_data_unpack
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucp/core/ucp_request.inl:596
+#7  0x1516c49f688a in ucp_eager_tagged_handler
+	at tag/eager_rcv.c:106
+#8  0x1516c49f688a in ucp_eager_only_handler
+	at tag/eager_rcv.c:142
+#9  0x1516c494973b in uct_iface_invoke_am
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/uct/base/uct_iface.h:947
+#10  0x1516c494973b in uct_mm_iface_invoke_am
+	at sm/mm/base/mm_iface.h:278
+#11  0x1516c494973b in uct_mm_iface_process_recv
+	at sm/mm/base/mm_iface.c:325
+#12  0x1516c494973b in uct_mm_iface_poll_fifo
+	at sm/mm/base/mm_iface.c:357
+#13  0x1516c494973b in uct_mm_iface_progress
+	at sm/mm/base/mm_iface.c:410
+#14  0x1516c49ba979 in ucs_callbackq_dispatch
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/ucs/datastruct/callbackq.h:215
+#15  0x1516c49ba979 in uct_worker_progress
+	at /dev/shm/swmanage/juwels/UCX/default/GCCcore-14.3.0/ucx-1.19.0/src/uct/api/uct.h:2823
+#16  0x1516c49ba979 in ucp_worker_progress
+	at core/ucp_worker.c:3059
+#17  0x1516c4a75a0a in ???
+#18  0x1516c54dc8bb in ???
+#19  0x1516c5543b8f in ???
+#20  0x1516c557c11b in ???
+#21  0x1516c54f1e8f in ???
+#22  0x1516c57fc0e2 in ???
+#23  0x40ce64 in ???
+#24  0x41d83b in ???
+#25  0x4024dc in ???
+#26  0x1516c4dfd5cf in ???
+#27  0x1516c4dfd67f in ???
+#28  0x402514 in ???
+#29  0xffffffffffffffff in ???
+srun: error: jwc03n287: task 1: Segmentation fault (core dumped)
+srun: error: jwc03n287: task 0: Terminated
+srun: Force Terminated StepId=12918608.0
