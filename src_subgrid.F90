@@ -122,6 +122,7 @@ subroutine AGrid_properties(nz,AGlifetime,jLWgrid)
                   diff_subsrcMsun = &
                         subsrcM_msun(zred_now,dens_ND(i,j,k),densNDcrit) &
                         - subsrcM_msun(zred_prev,dens_ND_prev(i,j,k),densNDcrit_prev)
+                  write(logf,*)"diff_subsrcMsun = ",diff_subsrcMsun
                else
                   diff_subsrcMsun = subsrcM_msun(zred_now,dens_ND(i,j,k),densNDcrit)
                endif
@@ -136,6 +137,10 @@ subroutine AGrid_properties(nz,AGlifetime,jLWgrid)
                      .and. diff_subsrcMsun > 0d0) then
                   AGflag(i,j,k) = 1
                   NumAGrid      = NumAGrid + 1
+               else
+                  write(logf,*)"xh(i,j,k,1) = ",xh(i,j,k,1)," StillNeutral = ",StillNeutral
+                  write(logf,*)"jLWgrid(i,j,k) = ",jLWgrid(i,j,k)," jLWcrit_now = ", jLWcrit_now
+                  write(logf,*)"diff_subsrcMsun =",diff_subsrcMsun
                endif
             enddo
          enddo

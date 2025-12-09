@@ -18,6 +18,7 @@ module source_sub
   integer, public :: NumAGrid !< Number of Active Grids having subgrid sources
   integer, public, parameter :: MHflag = 2
 !!$  integer, public, parameter :: MHflag = 0
+  debug_print_limit = 20   ! print at most 20 failures
 
   integer,dimension(mesh(1),mesh(2),mesh(3)) :: AGflag
 
@@ -85,6 +86,14 @@ contains
     ! Ask for input
     if (rank == 0) then
        
+       write(6,*) "zred_now=", zred_now
+         write(6,*) "densNDcrit=", densNDcrit
+         write(6,*) "jLWcrit_now=", jLWcrit_now
+         write(6,*) "Neutrality threshold StillNeutral=", StillNeutral
+         write(6,*) "min/max xH=", minval(xh(:,:,:,1)), maxval(xh(:,:,:,1))
+         write(6,*) "min/max jLW=", minval(jLWgrid),   maxval(jLWgrid)
+         write(6,*) "min/max dens_ND=", minval(dens_ND), maxval(dens_ND)
+
        ! When nz=1, no need to differentiate mass in time!!!!
        if (nz > 1) zred_prev = zred_array(nz-1)
        zred_now  = zred_array(nz)
@@ -135,6 +144,18 @@ contains
                      .AND. diff_subsrcMsun > 0d0) then
                    AGflag(i,j,k) = 1
                    NumAGrid      = NumAGrid + 1
+               else
+                  if (debug_print_limit > 0) then
+                     write(6,*) "Cell failing at (i,j,k)=", i,j,k
+                     write(6,*) "   xH = ", xh(i,j,k,1)
+                     write(6,*) "   StillNeutral = ", StillNeutral
+                     write(6,*) "   jLW   = ", jLWgrid(i,j,k)
+                     write(6,*) "   jLWcrit_now = ", jLWcrit_now
+                     write(6,*) "   diff_subsrcMsun = ", diff_subsrcMsun
+                     write(6,*)
+                     debug_print_limit = debug_print_limit - 1
+                  end if
+               
                 endif
              enddo
           enddo

@@ -68,7 +68,9 @@ FFTW3_FLAG = -I$(FFTW3_INC) -L$(FFTW3_LIB) -lfftw3
 #IFORTFLAGS = -O2 -fpp  # Chosun Teragon
 
 # F90 options (gfortran)
-GFORTFLAGS = -O2  -ffree-line-length-none
+# GFORTFLAGS = -O2  -ffree-line-length-none
+GFORTFLAGS = -O2 -g -DDEBUG -ffree-line-length-none
+
 # Processor dependent optimization
 #F90FLAGS1 = $(IFORTFLAGS) 
 #F90FLAGS1 = -xW $(IFORTFLAGS) 

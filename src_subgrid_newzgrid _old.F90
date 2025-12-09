@@ -49,7 +49,7 @@ contains
 
     ! Input routine: establish the subgrid source properties
     ! Author: Kyungjin Ahn
-    ! Update: 5-Sep-2009, 15-Jul-2010, 9-Dec-2025 (David A.)
+    ! Update: 5-Sep-2009, 15-Jul-2010
 
     ! For random permutation of sources
     use perm  ! ctrper seems to break if source number too large.
@@ -87,7 +87,7 @@ contains
 #ifdef MPILOG     
     write(logf,*) "Check subgrid props: ",zred_now,nz,AGlifetime
 #endif 
-    debug_print_limit = 3
+    debug_print_limit = 20
     ! Ask for input
     if (rank == 0) then
        print*,"Inside AGrid_properties"
@@ -249,11 +249,7 @@ contains
        enddo
        
        tot_subsrcM_msun = sum(ssM_msun)
-       print*,"tot_subsrcM_msun = ",tot_subsrcM_msun
-       print*,"Total mini halos generated = ", tot_subsrcM_msun/M_PIIIstar_msun
        
-       stop
-
        ! Convert subgrid source masses into grid mass unit, and then
        ! multiply phot_per_atom(3). Result is similar to srcMass under
        ! source_properties(but see below for difference when MHflag=2, 
@@ -377,9 +373,6 @@ contains
 
     ! what we want
     real(kind=dp), intent(out) :: densNDcrit
-    
-    ! for interpolating we round the current zred to three decimal places
-    real(kind=dp)             :: zred_round
 
 
     if (MHflag == 1) then
@@ -402,45 +395,29 @@ contains
        volratio = (size_smallbox/h)**3 &
             / (vol_cMpc3*real(mesh(1)*mesh(2)*mesh(3),dp))
 
-       
        ! Interpolate by finding the nearest neighbor index. Data table given 
        ! should be in the ascending order in z, and has to be in very fine, 
        ! equal size bin. This is the sheer total number of minihalos in the
        ! small box, NOT the number density of minihalos.
        dz_table     = (ztable(Ntable)-ztable(1))/real(Ntable-1, dp)
        NMH_smallbox = numMHtable(int((zred-ztable(1))/dz_table) + 1)
-       deallocate(ztable)
+       !deallocate(ztable)
        deallocate(numMHtable)
        ! Now iterate until we find the right number for the bigbox
 
-       ! ------------------------------------------------------------------
-       ! Find the appropriate redshift index using the non-uniform redshift
-       ! array zred_array_interp (same approach as get_denscrit).
-       ! We locate idx_zred such that:
-       !   zred_array_interp(idx_zred) <= zred < zred_array_interp(idx_zred+1)
-       ! If outside range we clamp to endpoints.
-       ! ------------------------------------------------------------------
-       idx_zred = 1
-
-             zred_round = nint(zred * 1000.0) / 1000.0
-       if (Nzdata > 1) then
-          do itable = 2, Nzdata
-
-             if (zred_array_interp(itable-1) >= zred_round .and. zred_array_interp(itable) < zred_round) then
-                idx_zred = itable - 1
-                exit
-             end if
-          end do
-          
-       else
-          ! single entry fallback
-          idx_zred = 1
-       end if
+       !This needs to be replaced with finding the index in our new data, NOT
+       ! assuming equal spacing in z
+       !idx_zred     = int((zred - zmin) /dzred) + 1
+       do itable = 2, Ntable
+          if(ztable(itable-1)<=zred .and. ztable(itable)>zred) idx_zred = itable-1  !?
+       enddo
 
        ! Very poor extrapolation. Just limit your simulation
        ! within given redshift range.
-       if (idx_zred     <= 0         ) idx_zred = 1
-       if (idx_zred     > Nzdata     ) idx_zred = Nzdata
+!       if (idx_zred     <= 0         ) idx_zred = 1
+!       if (idx_zred     > Nzdata     ) idx_zred = Nzdata
+       if (zred     <= ztable(1)       ) idx_zred = 1
+       if (zred     >= ztable(Nzdata)  ) idx_zred = Nzdata
 
        ! bisecting(?) interpolation
        LGdensND_L = -1d0 ! starting L value, should be small enough.
@@ -476,6 +453,7 @@ contains
           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
           !!!!!!!!!
           NMH_simbox = NMH_simbox * vol_cMpc3 * (h/0.7d0)**3
+          
           ! fractional difference
           frac = (NMH_simbox*volratio - NMH_smallbox)/NMH_smallbox
 
@@ -487,7 +465,6 @@ contains
              LGdensND_L = LGdensND_N
           endif
        enddo
-       print*,"Theoretical num mini halos: ", NMH_simbox
        densNDcrit = 10d0**LGdensND_N
     endif   ! end of MHflag=2 case
 
@@ -500,7 +477,7 @@ contains
     ! Get subgrid src mass (those not resolved in N-body) in solar mass unit
     ! Cell characteristic given by zred & dimensionless density
 
-    integer                   :: idx_zred, idx_LGdelta1, itable
+    integer                   :: idx_zred, idx_LGdelta1
 
     real(kind=dp)             :: subsrcM_msun
     real(kind=dp), intent(in) :: zred
@@ -508,7 +485,7 @@ contains
     real(kind=dp), intent(in) :: densNDcrit
     real(kind=dp)             :: LGdelta1
     real(kind=dp)             :: N_MH
-    real(kind=dp)             :: zred_round
+
 
     if (MHflag == 1) then
        write(6,*)  'Do something!!!!!!!!!!!!!!!!!!!!!!!'
@@ -517,28 +494,7 @@ contains
        LGdelta1 = log10(dble(densND))
        if (densND <= 0d0) LGdelta1 = -5  ! for numerical safety.
 
-       ! ------------------------------------------------------------------
-       ! Find the appropriate redshift index using the non-uniform redshift
-       ! array zred_array_interp (same approach as get_denscrit).
-       ! We locate idx_zred such that:
-       !   zred_array_interp(idx_zred) <= zred < zred_array_interp(idx_zred+1)
-       ! If outside range we clamp to endpoints.
-       ! ------------------------------------------------------------------
-       idx_zred = 1
-       zred_round = nint(zred * 1000.0) / 1000.0
-       if (Nzdata > 1) then
-          do itable = 2, Nzdata
-
-             if (zred_array_interp(itable-1) >= zred_round .and. zred_array_interp(itable) < zred_round) then
-                idx_zred = itable - 1
-                exit
-             end if
-          end do
-
-       else
-          ! single entry fallback
-          idx_zred = 1
-       end if
+       idx_zred     = int((zred     - zmin       ) /dzred    ) + 1
 
        ! Very poor extrapolation. Just limit your simulation
        ! within given redshift range.
@@ -556,6 +512,7 @@ contains
        if (densND >= densNDcrit) then
           ! number of minihalos contained in the cell, with volume vol_cMpc3 
           ! in comoving Mpc^3 unit.
+          ! number of minihalos on the cell with given volume
           ! !!!!!!!! Careful
           ! Because fitting function uses h=0.7, we need to scale further with used h.
           ! SHOULD BE FIXED LATER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -573,6 +530,7 @@ contains
     endif
 
   end function subsrcM_msun
+
   ! =======================================================================
 
   subroutine read_LGnMH_Mpc3

@@ -273,6 +273,8 @@ print*,"Post Nbody"
 #endif 
      if (rank ==0) print *, 'calling source'
 #ifdef MH
+      print*,"zred_coarse = ",zred_coarse
+      print*,"zred = ", zred
      ! When finer redshifts are used for MHs, use a coarse redshift
      ! to read in more-massive-than-MH sources and keep using it for
      ! every fine redshift (therefore end_time-sim_time corresponds to

@@ -3,9 +3,9 @@
 #SBATCH --job-name="C2Ray_LW"
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
-##SBATCH --ntasks-per-node=1     # MPI tasks
+##SBATCH --ntasks-per-node=4     # MPI tasks
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=48      # OpenMP threads (adjust to node)
+#SBATCH --cpus-per-task=4      # OpenMP threads (adjust to node)
 #SBATCH --mem=0                 # full node memory
 ##SBATCH --partition=mem192
 #SBATCH --mail-type=ALL
