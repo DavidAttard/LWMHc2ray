@@ -252,8 +252,6 @@ contains
        print*,"tot_subsrcM_msun = ",tot_subsrcM_msun
        print*,"Total mini halos generated = ", tot_subsrcM_msun/M_PIIIstar_msun
        
-       stop
-
        ! Convert subgrid source masses into grid mass unit, and then
        ! multiply phot_per_atom(3). Result is similar to srcMass under
        ! source_properties(but see below for difference when MHflag=2, 
