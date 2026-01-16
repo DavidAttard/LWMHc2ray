@@ -1,0 +1,23 @@
+
+  [01;33mThis stage is in construction. Thanks for being an early adopter! If
+you are
+  missing some software you'd like to have, please contact support at
+sc@fz-juelich.de[0m
+
+At line 235 of file sourceprops_cubep3m.F90 (unit = 50, file = '../sources/18.540-coarsened_sources.dat')
+Fortran runtime error: Bad integer for item 1 in list input
+
+Error termination. Backtrace:
+#0  0x147f40b14450 in read_integer
+	at ../../../libgfortran/io/list_read.c:1133
+#1  0x147f40b1742a in list_formatted_read_scalar
+	at ../../../libgfortran/io/list_read.c:2227
+#2  0x40a7cb in __sourceprops_MOD_establish_number_of_active_sources
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/sourceprops_cubep3m.F90:235
+#3  0x40bc47 in __sourceprops_MOD_source_properties
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/sourceprops_cubep3m.F90:121
+#4  0x41ee21 in c2ray
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/C2Ray.F90:286
+#5  0x40249c in main
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/C2Ray.F90:34
+srun: error: jwc01n050: task 0: Exited with exit code 2

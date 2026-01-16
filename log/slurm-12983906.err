@@ -1,0 +1,19 @@
+
+  [01;33mThis stage is in construction. Thanks for being an early adopter! If
+you are
+  missing some software you'd like to have, please contact support at
+sc@fz-juelich.de[0m
+
+At line 95 of file mpi.F90 (unit = 30)
+Fortran runtime error: Cannot open file '../results/C2Ray.log': No such file or directory
+
+Error termination. Backtrace:
+#0  0x14c794b4918b in already_open
+	at ../../../libgfortran/io/open.c:742
+#1  0x404cac in __my_mpi_MOD_mpi_setup
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/mpi.F90:95
+#2  0x41d2aa in c2ray
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/C2Ray.F90:137
+#3  0x40249c in main
+	at /p/scratch/lgreion/david/LW_in_pyc2ray/LWMHc2ray/C2Ray.F90:34
+srun: error: jwc08n128: task 0: Exited with exit code 2

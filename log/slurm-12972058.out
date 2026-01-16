@@ -1,0 +1,2937 @@
+1
+ This is rank 0
+ Which output streams do you want?
+ Enter a mask for streams 1 through 7
+ E.g. 1,0,1,0,0,0,0 means streams 1 and 3, but not 2, 4, 5, 6, 7
+Enter initial temperature (K): Restart (y/n)? : Restart at midpoint (y/n)? : Number of starting slice(s): (1 number for no MH, 2 - fine and coarse -- for MH) Pre Nbody
+Files with redshifts(fine, coarse): (minihalo-relevant redshifts, N-body redshifts) Post Nbody
+ check Nzdata          68         210
+ check zred -0.90000000000000002        20.000000000000000        30.0000000       27.8999996       26.1240005       24.5970001       23.2679996       22.1000004       21.0620003       20.1340008       19.2980003       18.5400009       17.8479996       17.2150002       16.6329994       16.0949993       15.5959997       15.1320000       14.6990004       14.2939997       13.9139996       13.5570002       13.2209997       12.9029999       12.6029997       12.3179998       12.0480003       11.7910004       11.5459995       11.3129997       11.0900002       10.8769999       10.6730003       10.4779997       10.2900000       10.1099997       9.93799973       9.77099991       9.61100006       9.45699978       9.30799961       9.16399956       9.02600002       8.89200020       8.76200008       8.63599968       8.51500034       8.39700031       8.28299999       8.17199993       8.06400013       7.96000004       7.85900021       7.76000023       7.66400003       7.57000017       7.48000002       7.39099979       7.30499983       7.22100019       7.13899994       7.05900002       6.98099995       6.90500021       6.82999992       6.75699997       6.68599987       6.61700010       6.54899979       6.48299980    
+ .................
+          68         210   30.0000000       6.48299980     -0.90000000000000002        20.000000000000000     
+UV Luminosity recipe (0,1,2): Enter number of time steps between slices: Enter number of outputs between slices:  mesh(1),mesh(2),mesh(3)         125         125         125
+ Size in X-direction =          125
+ Size in Y-direction =          125
+ Size in Z-direction =          125
+ -------------------------------------
+ Doing redshift:    30.000000000000000       to    29.623999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    30.000000000000000     
+ zred =    30.000000000000000     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ source props read. numsrc:           1
+ calling dens_ini zred, nz, nz0   30.000000000000000                1           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   0.0000000000000000     
+ Inside AGrid_properties
+ zred_now,  densNDcrit   30.000000000000000        0.0000000000000000     
+ Theoretical num mini halos:    5409682.5698575070     
+ zred, densNDcrit   30.000000000000000        1.2381505003664504     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    0.0000000000000000     
+    StillNeutral =   0.100000001    
+    jLW   =    0.0000000000000000     
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    0.0000000000000000     
+    StillNeutral =   0.100000001    
+    jLW   =    0.0000000000000000     
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    0.0000000000000000     
+    StillNeutral =   0.100000001    
+    jLW   =    0.0000000000000000     
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =            0
+ Total jLW_failing =            0
+ Total diff_subsrcMsun_failing =      1888646
+ NumAGrid =        64479
+ Total =      1953125
+  Total grids =      1953125
+ tot_subsrcM_msun =    1622904770.9565344     
+ Total mini halos generated =    5409682.5698551144     
+ almost final
+ Number of active subgrids:       64479
+ Total active stellar mass in subgrids, in solar mass:   1622904770.9565344     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           1           1
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.9047409926997227E-023
+ BOTH SUBSOURCES exist       64480
+           1  sources have mass > 10^8 Msun
+       64479  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time  0.31972198262373314       0.31972198262373314     
+ .............
+ output redshift   29.936532407112121     
+ .............
+ actual_dt  0.31972198262373314     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time  0.63944396524746627       0.63944396524746627     
+ .............
+ output redshift   29.873388669364598     
+ .............
+ actual_dt  0.31972198262373314     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time  0.95916594787119946       0.95916594787119946     
+ .............
+ output redshift   29.810566150777827     
+ .............
+ actual_dt  0.31972198262373314     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   1.2788879304949325        1.2788879304949325     
+ .............
+ output redshift   29.748062244783384     
+ .............
+ actual_dt  0.31972198262373308     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   1.5986099131186655        1.5986099131186655     
+ .............
+ output redshift   29.685874373807653     
+ .............
+ actual_dt  0.31972198262373308     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   1.9183318957423987        1.9183318957423987     
+ .............
+ output redshift   29.623999988862558     
+ .............
+ actual_dt  0.31972198262373308     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    29.623999999999999       to    29.257999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    29.623999999999999     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   29.623999999999999                2           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.9047409926997227E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    5374915.7747634137     
+ zred_now,  densNDcrit   29.623999999999999        1.2381505003664504     
+ Theoretical num mini halos:    7186420.0386494892     
+ zred, densNDcrit   29.623999999999999        1.1917135434683419     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.0893802313293186E-011
+    StillNeutral =   0.100000001    
+    jLW   =    4.9047409926997227E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.1544770741760422E-011
+    StillNeutral =   0.100000001    
+    jLW   =    4.7387519114923372E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.1441594593579749E-011
+    StillNeutral =   0.100000001    
+    jLW   =    4.6171950895190574E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        23733
+ Total jLW_failing =      1344531
+ Total diff_subsrcMsun_failing =      1881199
+ NumAGrid =         9430
+ Total =      1890629
+  Total grids =      1953125
+ tot_subsrcM_msun =    15296007.957927419     
+ Total mini halos generated =    50986.693193091400     
+ almost final
+ Number of active subgrids:        9430
+ Total active stellar mass in subgrids, in solar mass:   15296007.957927419     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           2           1
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.6479266767987237E-023
+ BOTH SUBSOURCES exist        9431
+           1  sources have mass > 10^8 Msun
+        9430  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   2.2391194300921935        2.2391194300921935     
+ .............
+ output redshift   29.562231911105563     
+ .............
+ actual_dt  0.32078753434979485     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   2.5599069644419887        2.5599069644419887     
+ .............
+ output redshift   29.500774356799578     
+ .............
+ actual_dt  0.32078753434979501     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   2.8806944987917835        2.8806944987917835     
+ .............
+ output redshift   29.439624835729870     
+ .............
+ actual_dt  0.32078753434979501     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   3.2014820331415788        3.2014820331415788     
+ .............
+ output redshift   29.378780885058188     
+ .............
+ actual_dt  0.32078753434979501     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   3.5222695674913740        3.5222695674913740     
+ .............
+ output redshift   29.318240068940884     
+ .............
+ actual_dt  0.32078753434979501     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   3.8430571018411692        3.8430571018411692     
+ .............
+ output redshift   29.257999978153464     
+ .............
+ actual_dt  0.32078753434979501     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    29.257999999999999       to    28.904000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    29.257999999999999     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   29.257999999999999                3           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.6479266767987237E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    7174363.8449632078     
+ zred_now,  densNDcrit   29.257999999999999        1.1917135434683419     
+ Theoretical num mini halos:    9400348.6259333827     
+ zred, densNDcrit   29.257999999999999        1.1547819846894583     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    4.1062267735342273E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.6479266767987237E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    4.2353572905773351E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.6837321248386083E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    4.2139676730695852E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.7602227791624530E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        22987
+ Total jLW_failing =       329307
+ Total diff_subsrcMsun_failing =      1864742
+ NumAGrid =        72211
+ Total =      1936953
+  Total grids =      1953125
+ tot_subsrcM_msun =    90141743.682089642     
+ Total mini halos generated =    300472.47894029878     
+ almost final
+ Number of active subgrids:       72211
+ Total active stellar mass in subgrids, in solar mass:   90141743.682089642     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           3           1
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.0207491285100138E-023
+ BOTH SUBSOURCES exist       72212
+           1  sources have mass > 10^8 Msun
+       72211  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   4.1626928264019378        4.1626928264019378     
+ .............
+ output redshift   29.198272923834814     
+ .............
+ actual_dt  0.31963572456076877     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   4.4823285509627073        4.4823285509627073     
+ .............
+ output redshift   29.138839741430871     
+ .............
+ actual_dt  0.31963572456076877     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   4.8019642755234750        4.8019642755234750     
+ .............
+ output redshift   29.079698124274415     
+ .............
+ actual_dt  0.31963572456076844     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   5.1216000000842437        5.1216000000842437     
+ .............
+ output redshift   29.020845790520333     
+ .............
+ actual_dt  0.31963572456076844     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   5.4412357246450123        5.4412357246450123     
+ .............
+ output redshift   28.962280482806609     
+ .............
+ actual_dt  0.31963572456076844     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   5.7608714492057809        5.7608714492057809     
+ .............
+ output redshift   28.903999967920985     
+ .............
+ actual_dt  0.31963572456076844     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    28.904000000000000       to    28.559999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    28.904000000000000     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   28.904000000000000                4           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.0207491285100138E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    9409135.6068582758     
+ zred_now,  densNDcrit   28.904000000000000        1.1547819846894583     
+ Theoretical num mini halos:    12352911.889100866     
+ zred, densNDcrit   28.904000000000000        1.1189949459517485     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    6.0408724463639762E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.0207491285100138E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    6.2325800336687776E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.0149443709579537E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    6.1994979028839881E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.0134252008467522E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        22321
+ Total jLW_failing =            0
+ Total diff_subsrcMsun_failing =      1836242
+ NumAGrid =       116883
+ Total =      1953125
+  Total grids =      1953125
+ tot_subsrcM_msun =    417876521.24118418     
+ Total mini halos generated =    1392921.7374706140     
+ almost final
+ Number of active subgrids:      116883
+ Total active stellar mass in subgrids, in solar mass:   417876521.24118418     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           4           1
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   2.5900886323972170E-023
+ BOTH SUBSOURCES exist      116884
+           1  sources have mass > 10^8 Msun
+      116883  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   6.0806726755887599        6.0806726755887599     
+ .............
+ output redshift   28.845972078970028     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   6.4004739019717389        6.4004739019717389     
+ .............
+ output redshift   28.788224876886026     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   6.7202751283547180        6.7202751283547180     
+ .............
+ output redshift   28.730756195616959     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   7.0400763547376970        7.0400763547376970     
+ .............
+ output redshift   28.673563892028074     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   7.3598775811206760        7.3598775811206760     
+ .............
+ output redshift   28.616645845594238     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   7.6796788075036551        7.6796788075036551     
+ .............
+ output redshift   28.559999958097201     
+ .............
+ actual_dt  0.31980122638297909     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    28.559999999999999       to    28.225000000000001     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    28.559999999999999     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   28.559999999999999                5           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   2.5900886323972170E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    12268675.670589563     
+ zred_now,  densNDcrit   28.559999999999999        1.1189949459517485     
+ Theoretical num mini halos:    16050857.611920295     
+ zred, densNDcrit   28.559999999999999        1.0843169582371710     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    7.9055740686423404E-011
+    StillNeutral =   0.100000001    
+    jLW   =    2.5900886323972170E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    8.1587133316657345E-011
+    StillNeutral =   0.100000001    
+    jLW   =    2.6191717513450756E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    8.1133230342422813E-011
+    StillNeutral =   0.100000001    
+    jLW   =    2.6552769783078119E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        21653
+ Total jLW_failing =          301
+ Total diff_subsrcMsun_failing =      1802953
+ NumAGrid =       150133
+ Total =      1953086
+  Total grids =      1953125
+ tot_subsrcM_msun =    477875657.81698644     
+ Total mini halos generated =    1592918.8593899547     
+ almost final
+ Number of active subgrids:      150133
+ Total active stellar mass in subgrids, in solar mass:   477875657.81698644     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           1
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   2.7569775137667021E-023
+ BOTH SUBSOURCES exist      150134
+           1  sources have mass > 10^8 Msun
+      150133  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   8.0001838413458888        8.0001838413458888     
+ .............
+ output redshift   28.503500379742157     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   8.3206888751881234        8.3206888751881234     
+ .............
+ output redshift   28.447270006144684     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   8.6411939090303580        8.6411939090303580     
+ .............
+ output redshift   28.391306790857644     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   8.9616989428725926        8.9616989428725926     
+ .............
+ output redshift   28.335608708763626     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   9.2822039767148272        9.2822039767148272     
+ .............
+ output redshift   28.280173755792752     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   9.6027090105570601        9.6027090105570601     
+ .............
+ output redshift   28.224999948645095     
+ .............
+ actual_dt  0.32050503384223411     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    28.225000000000001       to    27.899999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    28.225000000000001     
+ sourcelistfile../sources/30.000-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   28.225000000000001                6           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   2.7569775137667021E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    15851925.911234384     
+ zred_now,  densNDcrit   28.225000000000001        1.0843169582371710     
+ Theoretical num mini halos:    20425088.901261620     
+ zred, densNDcrit   28.225000000000001        1.0507136517231503     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    9.7068735428057495E-011
+    StillNeutral =   0.100000001    
+    jLW   =    2.7569775137667021E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.0020439729710451E-010
+    StillNeutral =   0.100000001    
+    jLW   =    2.9144411404979583E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    9.9621518933473707E-011
+    StillNeutral =   0.100000001    
+    jLW   =    3.1328240952569602E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        21011
+ Total jLW_failing =           10
+ Total diff_subsrcMsun_failing =      1771547
+ NumAGrid =       181578
+ Total =      1953125
+  Total grids =      1953125
+ tot_subsrcM_msun =    532152549.26263100     
+ Total mini halos generated =    1773841.8308754368     
+ almost final
+ Number of active subgrids:      181578
+ Total active stellar mass in subgrids, in solar mass:   532152549.26263100     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           2
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.9144670736493560E-023
+ BOTH SUBSOURCES exist      181579
+           1  sources have mass > 10^8 Msun
+      181578  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   9.9225480945160403        9.9225480945160403     
+ .............
+ output redshift   28.170199159535731     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   10.242387178475019        10.242387178475019     
+ .............
+ output redshift   28.115654546978014     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   10.562226262433997        10.562226262433997     
+ .............
+ output redshift   28.061364200258311     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   10.882065346392977        10.882065346392977     
+ .............
+ output redshift   28.007326228203734     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   11.201904430351956        11.201904430351956     
+ .............
+ output redshift   27.953538758928552     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   11.521743514310934        11.521743514310934     
+ .............
+ output redshift   27.899999939584490     
+ .............
+ actual_dt  0.31983908395897798     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    27.899999999999999       to    27.584000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    27.899999999999999     
+ zred =    27.899999999999999     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ source props read. numsrc:           1
+ calling dens_ini zred, nz, nz0   27.899999999999999                7           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.9144670736493560E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    20405826.023430154     
+ zred_now,  densNDcrit   27.899999999999999        1.0507136517231503     
+ Theoretical num mini halos:    26009040.351270568     
+ zred, densNDcrit   27.899999999999999        1.2188141848422898     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.1440493431075227E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.9144670736493560E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.1813264038859628E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.0635760436718708E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.1741589124592000E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.0392745104540937E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        20347
+ Total jLW_failing =         3452
+ Total diff_subsrcMsun_failing =      1847359
+ NumAGrid =        85092
+ Total =      1932451
+  Total grids =      1953125
+ tot_subsrcM_msun =    912159016.44858575     
+ Total mini halos generated =    3040530.0548286191     
+ almost final
+ Number of active subgrids:       85092
+ Total active stellar mass in subgrids, in solar mass:   912159016.44858575     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           3
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.4124084695064226E-023
+ BOTH SUBSOURCES exist       85093
+           1  sources have mass > 10^8 Msun
+       85092  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   11.841467012330808        11.841467012330808     
+ .............
+ output redshift   27.846727150831420     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   12.161190510350680        12.161190510350680     
+ .............
+ output redshift   27.793699186049189     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   12.480914008370553        12.480914008370553     
+ .............
+ output redshift   27.740914249980751     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   12.800637506390427        12.800637506390427     
+ .............
+ output redshift   27.688370565420410     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   13.120361004410299        13.120361004410299     
+ .............
+ output redshift   27.636066372983429     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   13.440084502430171        13.440084502430171     
+ .............
+ output redshift   27.583999930879230     
+ .............
+ actual_dt  0.31972349801987210     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    27.584000000000000       to    27.276000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    27.584000000000000     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   27.584000000000000                8           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.4124084695064226E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    26316020.537244461     
+ zred_now,  densNDcrit   27.584000000000000        1.2188141848422898     
+ Theoretical num mini halos:    31596882.162393004     
+ zred, densNDcrit   27.584000000000000        1.1890368452040503     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.3112846312252069E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.4124084695064226E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.3543745031735499E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.4149420198473478E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.3458211368250206E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.5390152767790319E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        47870
+ Total jLW_failing =      1169364
+ Total diff_subsrcMsun_failing =      1899477
+ NumAGrid =        11214
+ Total =      1910691
+  Total grids =      1953125
+ tot_subsrcM_msun =    38470352.443475932     
+ Total mini halos generated =    128234.50814491978     
+ almost final
+ Number of active subgrids:       11214
+ Total active stellar mass in subgrids, in solar mass:   38470352.443475932     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           4
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.4757173444599683E-023
+ BOTH SUBSOURCES exist       11215
+           1  sources have mass > 10^8 Msun
+       11214  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   13.760333624293443        13.760333624293443     
+ .............
+ output redshift   27.532084499132619     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   14.080582746156715        14.080582746156715     
+ .............
+ output redshift   27.480404154303628     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   14.400831868019985        14.400831868019985     
+ .............
+ output redshift   27.428957197749064     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   14.721080989883257        14.721080989883257     
+ .............
+ output redshift   27.377741947656503     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   15.041330111746529        15.041330111746529     
+ .............
+ output redshift   27.326756738832568     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   15.361579233609801        15.361579233609801     
+ .............
+ output redshift   27.275999922494538     
+ .............
+ actual_dt  0.32024912186327142     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    27.276000000000000       to    26.977000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    27.276000000000000     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   27.276000000000000                9           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.4757173444599683E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    31718631.193001453     
+ zred_now,  densNDcrit   27.276000000000000        1.1890368452040503     
+ Theoretical num mini halos:    38027059.819805361     
+ zred, densNDcrit   27.276000000000000        1.1625983105011950     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.4730378939190047E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.4757173444599683E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.5218449807632983E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.4983656455484882E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.5118467242003497E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.4556198994411792E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        47213
+ Total jLW_failing =          271
+ Total diff_subsrcMsun_failing =      1889038
+ NumAGrid =        64077
+ Total =      1953115
+  Total grids =      1953125
+ tot_subsrcM_msun =    646053592.07537115     
+ Total mini halos generated =    2153511.9735845705     
+ almost final
+ Number of active subgrids:       64077
+ Total active stellar mass in subgrids, in solar mass:   646053592.07537115     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           5
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.7914825444564750E-023
+ BOTH SUBSOURCES exist       64078
+           1  sources have mass > 10^8 Msun
+       64077  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   15.680924619978551        15.680924619978551     
+ .............
+ output redshift   27.225612143161840     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   16.000270006347304        16.000270006347304     
+ .............
+ output redshift   27.175448242764599     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   16.319615392716052        16.319615392716052     
+ .............
+ output redshift   27.125506633980649     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   16.638960779084805        16.638960779084805     
+ .............
+ output redshift   27.075785744921401     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   16.958306165453557        16.958306165453557     
+ .............
+ output redshift   27.026284018941361     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   17.277651551822306        17.277651551822306     
+ .............
+ output redshift   26.976999914450495     
+ .............
+ actual_dt  0.31934538636875109     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    26.977000000000000       to    26.684999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    26.977000000000000     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   26.977000000000000               10           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.7914825444564750E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    38510097.271277525     
+ zred_now,  densNDcrit   26.977000000000000        1.1625983105011950     
+ Theoretical num mini halos:    45780436.496812142     
+ zred, densNDcrit   26.977000000000000        1.1367476432980335     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.6288753939414091E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.7914825444564750E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.6832824977636163E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.8357162974922542E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.6717910953159554E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.8676784056747713E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        46555
+ Total jLW_failing =       239816
+ Total diff_subsrcMsun_failing =      1879266
+ NumAGrid =        58588
+ Total =      1937854
+  Total grids =      1953125
+ tot_subsrcM_msun =    363063600.77131420     
+ Total mini halos generated =    1210212.0025710473     
+ almost final
+ Number of active subgrids:       58588
+ Total active stellar mass in subgrids, in solar mass:   363063600.77131420     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           6
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.2027613793894999E-023
+ BOTH SUBSOURCES exist       58589
+           1  sources have mass > 10^8 Msun
+       58588  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   17.597864618260967        17.597864618260967     
+ .............
+ output redshift   26.927798877070959     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   17.918077684699625        17.918077684699625     
+ .............
+ output redshift   26.878813585978044     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   18.238290751138283        18.238290751138283     
+ .............
+ output redshift   26.830042531469381     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   18.558503817576941        18.558503817576941     
+ .............
+ output redshift   26.781484218330455     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   18.878716884015603        18.878716884015603     
+ .............
+ output redshift   26.733137165658118     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   19.198929950454261        19.198929950454261     
+ .............
+ output redshift   26.684999906686677     
+ .............
+ actual_dt  0.32021306643865899     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    26.684999999999999       to    26.401000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    26.684999999999999     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   26.684999999999999               11           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.2027613793894999E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    45469501.452284336     
+ zred_now,  densNDcrit   26.684999999999999        1.1367476432980335     
+ Theoretical num mini halos:    54885928.978372484     
+ zred, densNDcrit   26.684999999999999        1.1114717722121661     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.7799239686311363E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.2027613793894999E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.8398484732257137E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.1879036760315946E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.8268113671088271E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.1652131251562553E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        45908
+ Total jLW_failing =        20673
+ Total diff_subsrcMsun_failing =      1857464
+ NumAGrid =        94216
+ Total =      1951680
+  Total grids =      1953125
+ tot_subsrcM_msun =    925323033.60240138     
+ Total mini halos generated =    3084410.1120080044     
+ almost final
+ Number of active subgrids:       94216
+ Total active stellar mass in subgrids, in solar mass:   925323033.60240138     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           5           7
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.5949480640030168E-023
+ BOTH SUBSOURCES exist       94217
+           1  sources have mass > 10^8 Msun
+       94216  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   19.518574913894202        19.518574913894202     
+ .............
+ output redshift   26.637155837621247     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   19.838219877334140        19.838219877334140     
+ .............
+ output redshift   26.589517939487987     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   20.157864840774081        20.157864840774081     
+ .............
+ output redshift   26.542084794452915     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   20.477509804214019        20.477509804214019     
+ .............
+ output redshift   26.494854998054358     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   20.797154767653961        20.797154767653961     
+ .............
+ output redshift   26.447827159042919     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   21.116799731093902        21.116799731093902     
+ .............
+ output redshift   26.400999899223617     
+ .............
+ actual_dt  0.31964496343993998     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    26.401000000000000       to    26.123999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    26.401000000000000     
+ sourcelistfile../sources/27.900-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   26.401000000000000               12           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.5949480640030168E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    55127965.804032527     
+ zred_now,  densNDcrit   26.401000000000000        1.1114717722121661     
+ Theoretical num mini halos:    65160992.592360109     
+ zred, densNDcrit   26.401000000000000        1.0867579165066832     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    1.9257440087017130E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.5949480640030168E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    1.9910817048926499E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.8783643191628774E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    1.9764569581665059E-010
+    StillNeutral =   0.100000001    
+    jLW   =    5.2257375233209584E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        45359
+ Total jLW_failing =       816868
+ Total diff_subsrcMsun_failing =      1851200
+ NumAGrid =        50088
+ Total =      1901288
+  Total grids =      1953125
+ tot_subsrcM_msun =    251455111.29716247     
+ Total mini halos generated =    838183.70432387490     
+ almost final
+ Number of active subgrids:       50088
+ Total active stellar mass in subgrids, in solar mass:   251455111.29716247     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6           7
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.5828277323349613E-023
+ BOTH SUBSOURCES exist       50089
+           1  sources have mass > 10^8 Msun
+       50088  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   21.436647050408563        21.436647050408563     
+ .............
+ output redshift   26.354342397551672     
+ .............
+ actual_dt  0.31984731931465993     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   21.756494369723221        21.756494369723221     
+ .............
+ output redshift   26.307883006970822     
+ .............
+ actual_dt  0.31984731931465799     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   22.076341689037879        22.076341689037879     
+ .............
+ output redshift   26.261620384990827     
+ .............
+ actual_dt  0.31984731931465799     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   22.396189008352536        22.396189008352536     
+ .............
+ output redshift   26.215553201598549     
+ .............
+ actual_dt  0.31984731931465799     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   22.716036327667194        22.716036327667194     
+ .............
+ output redshift   26.169680139110760     
+ .............
+ actual_dt  0.31984731931465799     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   23.035883646981851        23.035883646981851     
+ .............
+ output redshift   26.123999892029008     
+ .............
+ actual_dt  0.31984731931465799     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    26.123999999999999       to    25.853999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    26.123999999999999     
+ zred =    26.123999999999999     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ source props read. numsrc:           1
+ calling dens_ini zred, nz, nz0   26.123999999999999               13           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.5828277323349613E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    65250488.752376236     
+ zred_now,  densNDcrit   26.123999999999999        1.0867579165066832     
+ Theoretical num mini halos:    76614983.799128219     
+ zred, densNDcrit   26.123999999999999        1.2577935838152872     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.0669253331453974E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.5828277323349613E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.1375884005567225E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.5516979230805259E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.1213336816316986E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.5506694472464880E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        44751
+ Total jLW_failing =       112981
+ Total diff_subsrcMsun_failing =      1872912
+ NumAGrid =        33538
+ Total =      1906450
+  Total grids =      1953125
+ tot_subsrcM_msun =    1909086058.1291351     
+ Total mini halos generated =    6363620.1937637841     
+ almost final
+ Number of active subgrids:       33538
+ Total active stellar mass in subgrids, in solar mass:   1909086058.1291351     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6           8
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   6.2416507637696834E-023
+ BOTH SUBSOURCES exist       33539
+           1  sources have mass > 10^8 Msun
+       33538  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   23.355606311816281        23.355606311816281     
+ .............
+ output redshift   26.078528858132383     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   23.675328976650711        23.675328976650711     
+ .............
+ output redshift   26.033247916868781     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   23.995051641485141        23.995051641485141     
+ .............
+ output redshift   25.988155799921188     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   24.314774306319570        24.314774306319570     
+ .............
+ output redshift   25.943251250579277     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   24.634496971154000        24.634496971154000     
+ .............
+ output redshift   25.898533023604536     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   24.954219635988430        24.954219635988430     
+ .............
+ output redshift   25.853999885097334     
+ .............
+ actual_dt  0.31972266483442974     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    25.853999999999999       to    25.590000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    25.853999999999999     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   25.853999999999999               14           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   6.2416507637696834E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    77446300.954899952     
+ zred_now,  densNDcrit   25.853999999999999        1.2577935838152872     
+ Theoretical num mini halos:    91086834.770107955     
+ zred, densNDcrit   25.853999999999999        1.2243078243318797     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.2035378946863582E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.2416507637696834E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.2794360279507209E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.3862372240473399E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.2615138277684577E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.6833895813735440E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        75223
+ Total jLW_failing =      1511036
+ Total diff_subsrcMsun_failing =      1911583
+ NumAGrid =         5259
+ Total =      1916842
+  Total grids =      1953125
+ tot_subsrcM_msun =    102311772.72471666     
+ Total mini halos generated =    341039.24241572223     
+ almost final
+ Number of active subgrids:        5259
+ Total active stellar mass in subgrids, in solar mass:   102311772.72471666     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6           9
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.6103257461929211E-023
+ BOTH SUBSOURCES exist        5260
+           1  sources have mass > 10^8 Msun
+        5259  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   25.274704688490957        25.274704688490957     
+ .............
+ output redshift   25.809545079050860     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   25.595189740993487        25.595189740993487     
+ .............
+ output redshift   25.765273796408003     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   25.915674793496013        25.915674793496013     
+ .............
+ output redshift   25.721184827936202     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   26.236159845998539        26.236159845998539     
+ .............
+ output redshift   25.677276975331363     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   26.556644898501066        26.556644898501066     
+ .............
+ output redshift   25.633549051092466     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   26.877129951003592        26.877129951003592     
+ .............
+ output redshift   25.589999878397922     
+ .............
+ actual_dt  0.32048505250252513     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    25.590000000000000       to    25.332999999999998     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    25.590000000000000     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   25.590000000000000               15           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.6103257461929211E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    91701183.193916917     
+ zred_now,  densNDcrit   25.590000000000000        1.2243078243318797     
+ Theoretical num mini halos:    106720419.12921016     
+ zred, densNDcrit   25.590000000000000        1.1970850304957299     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.3361645604125236E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.6103257461929211E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.4172245715464724E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.6588747185488209E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.3975890847335868E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.6488355690407128E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        76404
+ Total jLW_failing =      1378998
+ Total diff_subsrcMsun_failing =      1903506
+ NumAGrid =        15351
+ Total =      1918857
+  Total grids =      1953125
+ tot_subsrcM_msun =    129261919.06028003     
+ Total mini halos generated =    430873.06353426672     
+ almost final
+ Number of active subgrids:       15351
+ Total active stellar mass in subgrids, in solar mass:   129261919.06028003     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          10
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.3170320645739589E-023
+ BOTH SUBSOURCES exist       15352
+           1  sources have mass > 10^8 Msun
+       15351  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   27.196852088566580        27.196852088566580     
+ .............
+ output redshift   25.546731327132413     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   27.516574226129570        27.516574226129570     
+ .............
+ output redshift   25.503638369061171     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   27.836296363692558        27.836296363692558     
+ .............
+ output redshift   25.460719866800851     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   28.156018501255545        28.156018501255545     
+ .............
+ output redshift   25.417974693073560     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   28.475740638818532        28.475740638818532     
+ .............
+ output redshift   25.375401730592820     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   28.795462776381523        28.795462776381523     
+ .............
+ output redshift   25.332999871951177     
+ .............
+ actual_dt  0.31972213756298801     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    25.332999999999998       to    25.082000000000001     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    25.332999999999998     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   25.332999999999998               16           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.3170320645739589E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    106884290.75823061     
+ zred_now,  densNDcrit   25.332999999999998        1.1970850304957299     
+ Theoretical num mini halos:    125723715.66434285     
+ zred, densNDcrit   25.332999999999998        1.1704675423592721     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.4643649881167518E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.3170320645739589E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.5504918489682726E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.2952596025663070E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.5291085371803579E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.3010665709704039E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =        76931
+ Total jLW_failing =        92095
+ Total diff_subsrcMsun_failing =      1890884
+ NumAGrid =        57935
+ Total =      1948819
+  Total grids =      1953125
+ tot_subsrcM_msun =    1727118394.3734274     
+ Total mini halos generated =    5757061.3145780917     
+ almost final
+ Number of active subgrids:       57935
+ Total active stellar mass in subgrids, in solar mass:   1727118394.3734274     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          11
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.4258132656575567E-023
+ BOTH SUBSOURCES exist       57936
+           1  sources have mass > 10^8 Msun
+       57935  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   29.115341279929673        29.115341279929673     
+ .............
+ output redshift   25.290747406660753     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   29.435219783477823        29.435219783477823     
+ .............
+ output redshift   25.248664024325446     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   29.755098287025973        29.755098287025973     
+ .............
+ output redshift   25.206748644939303     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   30.074976790574127        30.074976790574127     
+ .............
+ output redshift   25.165000197959113     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   30.394855294122276        30.394855294122276     
+ .............
+ output redshift   25.123417622199099     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   30.714733797670426        30.714733797670426     
+ .............
+ output redshift   25.081999865727092     
+ .............
+ actual_dt  0.31987850354814956     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    25.082000000000001       to    24.837000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    25.082000000000001     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   25.082000000000001               17           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.4258132656575567E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    125219477.31515205     
+ zred_now,  densNDcrit   25.082000000000001        1.1704675423592721     
+ Theoretical num mini halos:    146035738.77681527     
+ zred, densNDcrit   25.082000000000001        1.1470182092286410     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.5886989860751664E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.4258132656575567E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.6798151284840310E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.3396651477899958E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.6566473760453180E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.2764504398495569E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       128140
+ Total jLW_failing =      1504577
+ Total diff_subsrcMsun_failing =      1884353
+ NumAGrid =        11825
+ Total =      1896178
+  Total grids =      1953125
+ tot_subsrcM_msun =    236825879.35052219     
+ Total mini halos generated =    789419.59783507395     
+ almost final
+ Number of active subgrids:       11825
+ Total active stellar mass in subgrids, in solar mass:   236825879.35052219     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          12
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.3143415977747283E-023
+ BOTH SUBSOURCES exist       11826
+           1  sources have mass > 10^8 Msun
+       11825  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   31.034476157473819        31.034476157473819     
+ .............
+ output redshift   25.040763409210555     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   31.354218517277207        31.354218517277207     
+ .............
+ output redshift   24.999689557406420     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   31.673960877080599        31.673960877080599     
+ .............
+ output redshift   24.958777286836337     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   31.993703236883992        31.993703236883992     
+ .............
+ output redshift   24.918025582858899     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   32.313445596687380        32.313445596687380     
+ .............
+ output redshift   24.877433439572805     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   32.633187956490772        32.633187956490772     
+ .............
+ output redshift   24.836999859721210     
+ .............
+ actual_dt  0.31974235980339055     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    24.837000000000000       to    24.597000000000001     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    24.837000000000000     
+ sourcelistfile../sources/26.124-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   24.837000000000000               18           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.3143415977747283E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    147055512.25657400     
+ zred_now,  densNDcrit   24.837000000000000        1.1470182092286410     
+ Theoretical num mini halos:    169342823.42882946     
+ zred, densNDcrit   24.837000000000000        1.1240386637720556     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.7092218963034598E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.3143415977747283E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.8052476400836079E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.2506699596741541E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.7802631594534000E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.1975957602659264E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       133936
+ Total jLW_failing =       704997
+ Total diff_subsrcMsun_failing =      1879493
+ NumAGrid =        44248
+ Total =      1923741
+  Total grids =      1953125
+ tot_subsrcM_msun =    474620736.97207141     
+ Total mini halos generated =    1582069.1232402381     
+ almost final
+ Number of active subgrids:       44248
+ Total active stellar mass in subgrids, in solar mass:   474620736.97207141     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          13
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.5862690144130051E-023
+ BOTH SUBSOURCES exist       44249
+           1  sources have mass > 10^8 Msun
+       44248  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   32.953840778276870        32.953840778276870     
+ .............
+ output redshift   24.796609393273823     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   33.274493600062961        33.274493600062961     
+ .............
+ output redshift   24.756376411584530     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   33.595146421849059        33.595146421849059     
+ .............
+ output redshift   24.716299934478783     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   33.915799243635156        33.915799243635156     
+ .............
+ output redshift   24.676378990150777     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   34.236452065421247        34.236452065421247     
+ .............
+ output redshift   24.636612615072654     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   34.557104887207345        34.557104887207345     
+ .............
+ output redshift   24.596999853905025     
+ .............
+ actual_dt  0.32065282178609444     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    24.597000000000001       to    24.363000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    24.597000000000001     
+ zred =    24.597000000000001     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ source props read. numsrc:           1
+ calling dens_ini zred, nz, nz0   24.597000000000001               19           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.5862690144130051E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    172355352.29762888     
+ zred_now,  densNDcrit   24.597000000000001        1.1240386637720556     
+ Theoretical num mini halos:    197294772.48710153     
+ zred, densNDcrit   24.597000000000001        1.2606250636943297     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.8264755553425447E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.5862690144130051E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    2.9273493048001531E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.7888768758962981E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    2.9005123780220798E-010
+    StillNeutral =   0.100000001    
+    jLW   =    5.0018917831113372E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       147538
+ Total jLW_failing =       425973
+ Total diff_subsrcMsun_failing =      1859506
+ NumAGrid =        16125
+ Total =      1875631
+  Total grids =      1953125
+ tot_subsrcM_msun =    1728837827.5368218     
+ Total mini halos generated =    5762792.7584560728     
+ almost final
+ Number of active subgrids:       16125
+ Total active stellar mass in subgrids, in solar mass:   1728837827.5368218     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          14
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   5.0591318000153218E-023
+ BOTH SUBSOURCES exist       16126
+           1  sources have mass > 10^8 Msun
+       16125  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   34.877061764066276        34.877061764066276     
+ .............
+ output redshift   24.557625238967372     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   35.197018640925208        35.197018640925208     
+ .............
+ output redshift   24.518401695588910     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   35.516975517784132        35.516975517784132     
+ .............
+ output redshift   24.479328298495290     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   35.836932394643064        35.836932394643064     
+ .............
+ output redshift   24.440404130186522     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   36.156889271502003        36.156889271502003     
+ .............
+ output redshift   24.401628280854037     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   36.476846148360934        36.476846148360934     
+ .............
+ output redshift   24.362999848298809     
+ .............
+ actual_dt  0.31995687685893021     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    24.363000000000000       to    24.134000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    24.363000000000000     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   24.363000000000000               20           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   5.0591318000153218E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    197188655.76309168     
+ zred_now,  densNDcrit   24.363000000000000        1.2606250636943297     
+ Theoretical num mini halos:    227262914.57714829     
+ zred, densNDcrit   24.363000000000000        1.2353695004244531     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    2.9400205230414866E-010
+    StillNeutral =   0.100000001    
+    jLW   =    5.0591318000153218E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    3.0456585517479873E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.8255231512462751E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    3.0169451008602022E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.8469881200180412E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       162125
+ Total jLW_failing =      1147819
+ Total diff_subsrcMsun_failing =      1920788
+ NumAGrid =         9039
+ Total =      1929827
+  Total grids =      1953125
+ tot_subsrcM_msun =    605111618.67394769     
+ Total mini halos generated =    2017038.7289131589     
+ almost final
+ Number of active subgrids:        9039
+ Total active stellar mass in subgrids, in solar mass:   605111618.67394769     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          15
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.1927831541791288E-023
+ BOTH SUBSOURCES exist        9040
+           1  sources have mass > 10^8 Msun
+        9039  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   36.797192918030746        36.797192918030746     
+ .............
+ output redshift   24.324471133614356     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   37.117539687700557        37.117539687700557     
+ .............
+ output redshift   24.286088407889277     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   37.437886457370361        37.437886457370361     
+ .............
+ output redshift   24.247850788065385     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   37.758233227040172        37.758233227040172     
+ .............
+ output redshift   24.209757398412371     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   38.078579996709983        38.078579996709983     
+ .............
+ output redshift   24.171807370450551     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   38.398926766379795        38.398926766379795     
+ .............
+ output redshift   24.133999842874680     
+ .............
+ actual_dt  0.32034676966981013     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    24.134000000000000       to    23.910000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    24.134000000000000     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   24.134000000000000               21           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   4.1927831541791288E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    228423645.34088257     
+ zred_now,  densNDcrit   24.134000000000000        1.2353695004244531     
+ Theoretical num mini halos:    256961705.59254825     
+ zred, densNDcrit   24.134000000000000        1.2133451960771677     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    3.0503958126787412E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.1927831541791288E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    3.1607326955382375E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.0568622970704626E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    3.1301125406890673E-010
+    StillNeutral =   0.100000001    
+    jLW   =    4.1504640510449372E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       168958
+ Total jLW_failing =      1462681
+ Total diff_subsrcMsun_failing =      1914536
+ NumAGrid =         8031
+ Total =      1922567
+  Total grids =      1953125
+ tot_subsrcM_msun =    307720209.24069607     
+ Total mini halos generated =    1025734.0308023202     
+ almost final
+ Number of active subgrids:        8031
+ Total active stellar mass in subgrids, in solar mass:   307720209.24069607     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          16
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   5.6388588102233603E-023
+ BOTH SUBSOURCES exist        8032
+           1  sources have mass > 10^8 Msun
+        8031  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   38.719418221323991        38.719418221323991     
+ .............
+ output redshift   24.096316981480143     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   39.039909676268188        39.039909676268188     
+ .............
+ output redshift   24.058775045916349     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   39.360401131212384        39.360401131212384     
+ .............
+ output redshift   24.021373194819216     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   39.680892586156581        39.680892586156581     
+ .............
+ output redshift   23.984110593716078     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   40.001384041100778        40.001384041100778     
+ .............
+ output redshift   23.946986414954040     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   40.321875496044981        40.321875496044981     
+ .............
+ output redshift   23.909999837629130     
+ .............
+ actual_dt  0.32049145494419728     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    23.910000000000000       to    23.692000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    23.910000000000000     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   23.910000000000000               22           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   5.6388588102233603E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    257094979.07963818     
+ zred_now,  densNDcrit   23.910000000000000        1.2133451960771677     
+ Theoretical num mini halos:    298875219.92337674     
+ zred, densNDcrit   23.910000000000000        1.1863661590503345     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    3.1576444107020429E-010
+    StillNeutral =   0.100000001    
+    jLW   =    5.6388588102233603E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    3.2726129792215453E-010
+    StillNeutral =   0.100000001    
+    jLW   =    5.8392265933227267E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    3.2400595748049987E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.1350790048248382E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       173772
+ Total jLW_failing =       462329
+ Total diff_subsrcMsun_failing =      1896630
+ NumAGrid =         8340
+ Total =      1904970
+  Total grids =      1953125
+ tot_subsrcM_msun =    413287413.74709308     
+ Total mini halos generated =    1377624.7124903102     
+ almost final
+ Number of active subgrids:        8340
+ Total active stellar mass in subgrids, in solar mass:   413287413.74709308     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          17
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   3.8734476308698632E-023
+ BOTH SUBSOURCES exist        8341
+           1  sources have mass > 10^8 Msun
+        8340  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   40.640776982047470        40.640776982047470     
+ .............
+ output redshift   23.873332524279519     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   40.959678468049965        40.959678468049965     
+ .............
+ output redshift   23.836799848620885     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   41.278579954052454        41.278579954052454     
+ .............
+ output redshift   23.800401021396105     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   41.597481440054949        41.597481440054949     
+ .............
+ output redshift   23.764135259695820     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   41.916382926057437        41.916382926057437     
+ .............
+ output redshift   23.728001786893554     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   42.235284412059933        42.235284412059933     
+ .............
+ output redshift   23.691999832581732     
+ .............
+ actual_dt  0.31890148600249224     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    23.692000000000000       to    23.477000000000000     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    23.692000000000000     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   23.692000000000000               23           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   3.8734476308698632E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    297598414.43453503     
+ zred_now,  densNDcrit   23.692000000000000        1.1863661590503345     
+ Theoretical num mini halos:    338997053.29094720     
+ zred, densNDcrit   23.692000000000000        1.1652154917032231     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    3.2613340630524568E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.8734476308698632E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    3.3808446710595352E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.8461878742747288E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    3.3463439311209875E-010
+    StillNeutral =   0.100000001    
+    jLW   =    3.7681634397996450E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       180572
+ Total jLW_failing =       174824
+ Total diff_subsrcMsun_failing =      1897146
+ NumAGrid =        30784
+ Total =      1927930
+  Total grids =      1953125
+ tot_subsrcM_msun =    2062182979.7422037     
+ Total mini halos generated =    6873943.2658073455     
+ almost final
+ Number of active subgrids:       30784
+ Total active stellar mass in subgrids, in solar mass:   2062182979.7422037     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          18
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   6.1962703231416074E-023
+ BOTH SUBSOURCES exist       30785
+           1  sources have mass > 10^8 Msun
+       30784  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   42.556767340827278        42.556767340827278     
+ .............
+ output redshift   23.655838793852404     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   42.878250269594631        42.878250269594631     
+ .............
+ output redshift   23.619809858101121     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   43.199733198361976        43.199733198361976     
+ .............
+ output redshift   23.583912254861900     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   43.521216127129328        43.521216127129328     
+ .............
+ output redshift   23.548145219833980     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   43.842699055896681        43.842699055896681     
+ .............
+ output redshift   23.512507994819170     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   44.164181984664026        44.164181984664026     
+ .............
+ output redshift   23.476999827659963     
+ .............
+ actual_dt  0.32148292876734658     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    23.477000000000000       to    23.268000000000001     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    23.477000000000000     
+ sourcelistfile../sources/24.597-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           0
+ NumSrc0           1
+ calling dens_ini zred, nz, nz0   23.477000000000000               24           1
+ finishing dens_ini
+ before agrid_prop, jlw(1,1,1)   6.1962703231416074E-023
+ Inside AGrid_properties
+ Theoretical num mini halos:    336700205.38691235     
+ zred_now,  densNDcrit   23.477000000000000        1.1652154917032231     
+ Theoretical num mini halos:    378885713.45724511     
+ zred, densNDcrit   23.477000000000000        1.1470182092286410     
+ Cell failing at (i,j,k)=           1           1           1
+    xH =    3.3629292232884023E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.1962703231416074E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           2           1           1
+    xH =    3.4869531307518686E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.2112910785697615E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Cell failing at (i,j,k)=           3           1           1
+    xH =    3.4504673944446562E-010
+    StillNeutral =   0.100000001    
+    jLW   =    6.4933803467623588E-023
+    jLWcrit_now =    4.9999999999999997E-023
+    diff_subsrcMsun =    0.0000000000000000     
+
+ Total xh_failing =       208832
+ Total jLW_failing =      1537061
+ Total diff_subsrcMsun_failing =      1896082
+ NumAGrid =         7076
+ Total =      1903158
+  Total grids =      1953125
+ tot_subsrcM_msun =    272314404.84128940     
+ Total mini halos generated =    907714.68280429801     
+ almost final
+ Number of active subgrids:        7076
+ Total active stellar mass in subgrids, in solar mass:   272314404.84128940     
+ Sanity check: fesc00 =   0.20833332836627960     
+ Sanity check: fesc01 =   0.20000000000000001     
+ Sanity check: fesc_sub =    1.0096969696969698     
+ n_pastslice, nz_lwbegin           6          19
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ m1,m2,m3         125         125         125
+ after get_jLW, jlw(1,1,1)   4.3921470214515497E-023
+ BOTH SUBSOURCES exist        7077
+           1  sources have mass > 10^8 Msun
+        7076  grids(!) have mass < 10^8 Msun
+ sources merged
+ niter           1
+ ............
+ sim_time, output_time   44.483533166899591        44.483533166899591     
+ .............
+ output redshift   23.441854154283295     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   44.802884349135155        44.802884349135155     
+ .............
+ output redshift   23.406834370906317     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   45.122235531370713        45.122235531370713     
+ .............
+ output redshift   23.371939757585782     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   45.441586713606277        45.441586713606277     
+ .............
+ output redshift   23.337169600027529     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   45.760937895841842        45.760937895841842     
+ .............
+ output redshift   23.302523189530170     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ niter           1
+ ............
+ sim_time, output_time   46.080289078077406        46.080289078077406     
+ .............
+ output redshift   23.267999822929493     
+ .............
+ actual_dt  0.31935118223556025     
+ before output
+ after output
+ inner loop finished
+ photcons_flag:           0
+ -------------------------------------
+ Doing redshift:    23.268000000000001       to    23.062999999999999     
+ -------------------------------------
+ calling source
+ zred_coarse =    23.268000000000001     
+ zred =    23.268000000000001     
+ sourcelistfile../sources/23.268-coarsened_sources.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ inside establish_number_of_active_sources
+ restart           0
+ ios=           2
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ NO SOURCE FILE ../sources/23.268-coarsened_sources.dat Stopping!!!

@@ -632,8 +632,8 @@ contains
     real(kind=dp)             :: jLWcrit
     real(kind=dp), intent(in) :: zred
 
-    jLWcrit = 0.05d0 * 1d-21
-    !jLWcrit = 0.1d0 * 1d-21
+    !jLWcrit = 0.05d0 * 1d-21
+    jLWcrit = 0.1d0 * 1d-21
   end function jLWcrit
 
 
