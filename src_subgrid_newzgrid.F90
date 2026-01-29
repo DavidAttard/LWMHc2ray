@@ -400,13 +400,13 @@ contains
        volratio = (size_smallbox/h)**3 &
             / (vol_cMpc3*real(mesh(1)*mesh(2)*mesh(3),dp))
 
-       
        ! Interpolate by finding the nearest neighbor index. Data table given 
        ! should be in the ascending order in z, and has to be in very fine, 
        ! equal size bin. This is the sheer total number of minihalos in the
        ! small box, NOT the number density of minihalos.
        dz_table     = (ztable(Ntable)-ztable(1))/real(Ntable-1, dp)
-       NMH_smallbox = numMHtable(int((zred-ztable(1))/dz_table) + 1)
+       NMH_smallbox = numMHtable(int((zred-ztable(1))/dz_table) + 1)    
+
        deallocate(ztable)
        deallocate(numMHtable)
        ! Now iterate until we find the right number for the bigbox
@@ -439,11 +439,12 @@ contains
        ! within given redshift range.
        if (idx_zred     <= 0         ) idx_zred = 1
        if (idx_zred     > Nzdata     ) idx_zred = Nzdata
-
+       
        ! bisecting(?) interpolation
        LGdensND_L = -1d0 ! starting L value, should be small enough.
        LGdensND_R = 1d0  ! starting R value, should be large enough.
        iiter      = 0
+
        do
           iiter = iiter + 1
           LGdensND_N = (LGdensND_R + LGdensND_L)*0.5d0
